@@ -12,6 +12,12 @@ const viewAllUsers=async (req,res)=>{
     const data= await Task.find()
     res.render('ViewAllUsers',{data})
 }
+const deleteUser=async (res,res)=>{
+   const {id} = req.query
+    await Task.findByIdAndRemove(id)
+    const data= await Task.find()
+    res.render('ViewAllUsers',{data})
+}
 
 const addUser= async(req,res)=>{
     console.log(req.body)
@@ -32,4 +38,4 @@ const addUser= async(req,res)=>{
 
 
 
-module.exports= {showApp,addUser,errorPage,viewAllUsers}
+module.exports= {showApp,addUser,errorPage,viewAllUsers,deleteUser}

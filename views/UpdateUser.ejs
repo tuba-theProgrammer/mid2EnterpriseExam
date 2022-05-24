@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <style>
+         .box img {
+    width: 100%;
+    height: 100%;
+}
+.box1 img {
+    object-fit: cover;
+}
+     </style>
+    <title>Update User</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div style="border: 1px solid black; margin-top: 30px;">
+                <div class="wrapper">
+                    <div class="box box1"><img src="data:image/jpeg;base64,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" alt="a balloon"></div>           
+                </div>   
+                <div>
+                    <form action="/route/uploadImage">
+                        <input type="file" id="image" name="image">
+                        <input type="submit">
+                      </form>
+                </div>  
+              </div>
+          </div>
+          <div class="col-9">
+              <div style="border: 1px solid black; margin-top: 30px;" >
+               
+                <form method="POST" action="/route/addUser">
+                    <div class="row" style="padding: 10px; margin-top: 10px;">
+                        <div class = "col-6" >
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="name">First Name</label>
+                              <input type="text" id="name" class="form-control" name="name"/>
+                             
+                            </div>
+                          
+                        
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="phone">Phone Number</label>
+                              <input type="Number" id="phone" class="form-control" name="phone"/>
+                             
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="address">Address</label>
+                              <input type="text" id="address" class="form-control" name="address"/>
+                             
+                            </div>
+                          
+                        
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="state">State</label>
+                              <input type="text" id="state" class="form-control" name="state"/>
+                             
+                            </div>
+                          
+                        </div>
+                        <div class = "col-6">
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="email">Email</label>
+                              <input type="email" id="email" class="form-control" name="email"/>
+                             
+                            </div>
+                          
+                        
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="country">country</label>
+                              <input type="text" id="country" class="form-control" name="country"/>
+                             
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="city">City</label>
+                              <input type="text" id="city" class="form-control" name="city" />
+                             
+                            </div>
+                          
+                        
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="postcode">Zip/Code</label>
+                              <input type="number" id="postcode" class="form-control" name="postcode"/>
+                             
+                            </div>
+
+                        </div>
+                      </div>
+                  
+                  
+                      <button type="submit" class="btn btn-primary btn-block">Add User</button>
+                  </form>
+              </div>
+           
+          </div>
+        
+        </div>
+      </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
